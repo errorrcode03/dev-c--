@@ -5,7 +5,6 @@ class Node{
 	public :
 		int data;
 		Node* Next;
-		// now create a constructor which is nothing but fucntion in a class with same name as the class
 		Node(int val){
 			data=val;
 			Next=NULL;
