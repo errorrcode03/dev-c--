@@ -10,11 +10,11 @@ class Graph{
 	vector<tuple<int,int,int>>nodes;
 	unordered_map<int,vector< pair<int,int> >>adj;
 	map<int,int>dist;
-////	void edge(int parent , int child , int weight){
-////		nodes.push_back({parent, child , weight});
-////		dist[parent]=INT_MAX;
-////		dist[child]=INT_MAX;
-//	}
+	void edge(int parent , int child , int weight){
+		nodes.push_back({parent, child , weight});
+		dist[parent]=INT_MAX;
+		dist[child]=INT_MAX;
+	}
 	void edges(int par , int child, int cost){
 		adj[par].push_back({child,cost});
 		adj[child].push_back({par,cost});
