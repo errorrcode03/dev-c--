@@ -34,7 +34,7 @@ class BellmanFord : public Graph {
 		}
 		
 		for(auto & it: dist){
-			cout<<" "<< it.second<< " " ;
+			cout<<" "<< it.first<< " " ;
 		}
   }
 };
